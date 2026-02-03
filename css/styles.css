@@ -1264,8 +1264,34 @@ button {
 
 /* Mobile */
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+
+    .navbar {
+        padding: var(--spacing-sm) 0;
+    }
+
+    .nav-container {
+        max-width: 100%;
+        overflow: visible;
+    }
+
+    .logo img {
+        height: 40px;
+        max-width: 150px;
+    }
+
     .menu-toggle {
         display: flex;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 1001;
     }
 
     .nav-menu {
@@ -1279,10 +1305,19 @@ button {
         padding: var(--spacing-xl);
         box-shadow: var(--shadow-lg);
         transition: var(--transition-base);
+        gap: var(--spacing-md);
+        align-items: flex-start;
+        overflow-y: auto;
     }
 
     .nav-menu.active {
         left: 0;
+    }
+
+    .nav-link {
+        font-size: 1.125rem;
+        padding: var(--spacing-sm) 0;
+        width: 100%;
     }
 
     .hero-content {
