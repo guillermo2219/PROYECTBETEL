@@ -1,0 +1,39 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Archivos temporales
+*.tmp
+*.bak
+*.log
+
+# Node modules (si decides usar npm en el futuro)
+node_modules/
+package-lock.json
+
+# Archivos de construcción
+dist/
+build/
+
+# Archivos de entorno
+.env
+.env.local
+
+# Archivos de Netlify
+.netlify/
+
+# Archivos grandes
+*.exe
+*.zip
+*.rar
+
+# Específico del proyecto
+MobiriseSetup.exe
